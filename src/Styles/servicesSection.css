@@ -9,11 +9,12 @@
     justify-content: space-around;
     background-color: rgba(199, 113, 40, 0.85);
     color: white;
-    position: absolute; /* Position it absolutely inside the HeroSection */
-    bottom: 0; /* Align it at the bottom of the HeroSection */
+    position: absolute;
+    bottom: 0;
     left: 0;
     right: 0;
-    z-index: 1; /* Ensures it sits above the HeroSection */
+    z-index: 1;
+    padding: 25px 0;
   }
   
   .service-item {
@@ -56,4 +57,67 @@
   .service-item p:hover {
     text-decoration: underline;
   }
-  
+
+/* Desktop-specific layout */
+@media (min-width: 769px) {
+  .services-section {
+    flex-direction: row;
+    height: 150px;
+  }
+
+  .service-item {
+    width: 50%;
+    padding: 20px;
+    border-left: 1px solid white;
+  }
+
+  .service-item:first-child {
+    border-left: none;
+  }
+
+  .service-item p {
+    font-size: 16px;
+  }
+
+  .service-item h2 {
+    font-size: 24px;
+  }
+
+  .service-item p:last-child {
+    font-size: 14px;
+  }
+}
+
+/* Mobile-specific layout */
+@media (max-width: 768px) {
+  .services-section {
+    position: static;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px 15px;
+  }
+
+  .service-item {
+    width: 100%;
+    padding: 15px 10px;
+    border-left: none;
+    border-top: 1px solid white;
+  }
+
+  .service-item:first-child {
+    border-top: none;
+  }
+
+  .service-item p {
+    font-size: 14px;
+  }
+
+  .service-item h2 {
+    font-size: 18px;
+  }
+
+  .service-item p:last-child {
+    font-size: 12px;
+  }
+}

@@ -1,43 +1,102 @@
 .hardwork-section {
-    background-color: white; 
-    padding: 40px 20px;
-    text-align: left;
-    margin: 0 auto;
-    width: 100vw;
-    padding: 30px 80px;
+  background-color: white;
+  padding: 40px 20px;
+  text-align: left;
+  margin: 0 auto;
+  width: 100vw;
+  padding: 30px 80px; 
+  box-sizing: border-box;
+}
+
+.hardwork-title {
+  font-family: 'Bitter', Georgia, "Times New Roman", serif;
+  font-size: 1.5rem;
+  color: #1f4a75;
+  margin-bottom: 20px;
+  word-wrap: break-word; 
+}
+
+.hardwork-paragraph {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 30px;
+  padding-right: 200px;
+  line-height: 1.5;
+  word-wrap: break-word; 
+}
+
+.hardwork-list {
+  list-style: none;
+  padding: 20px 0px;
+}
+
+.hardwork-list li {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  word-wrap: break-word; 
+}
+
+.hardwork-arrow {
+  width: 20px;
+  height: auto;
+}
+
+/* Mobile and Tablet Responsive Design */
+@media (max-width: 768px) {
+  .hardwork-section {
+    padding: 30px 20px; 
   }
-  
+
   .hardwork-title {
-    font-family: 'Bitter', Georgia, "Times New Roman", serif;
-    font-size: 1.5rem;
-    color: #1f4a75;
-    margin-bottom: 20px;
+    font-size: 1.25rem; 
+    text-align: center; 
   }
-  
+
   .hardwork-paragraph {
-    font-size: 1rem;
-    color: #333;
-    margin-bottom: 30px;
-    padding-right: 200px;
-    line-height: 1.5;
+    font-size: 0.9rem; 
+    padding-right: 0; 
+    text-align: center; 
+    margin-bottom: 20px; 
   }
-  
+
   .hardwork-list {
-    list-style: none;
-    padding: 20px 0px;
+    padding-left: 0;
   }
-  
+
   .hardwork-list li {
-    font-size: 1rem;
-    color: #333;
-    margin-bottom: 15px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
+    font-size: 0.9rem; 
+    justify-content: flex-start;
+    gap: 8px; 
   }
-  
+
   .hardwork-arrow {
-    width: 20px; 
-    height: auto;
+    width: 16px; 
   }
-  
+}
+
+@media (max-width: 480px) {
+  .hardwork-section {
+    padding: 20px 10px; 
+  }
+
+  .hardwork-title {
+    font-size: 1.1rem; 
+  }
+
+  .hardwork-paragraph {
+    font-size: 0.85rem;
+    text-align: center; 
+  }
+
+  .hardwork-list li {
+    font-size: 0.85rem; 
+  }
+
+  .hardwork-arrow {
+    width: 14px; 
+  }
+}

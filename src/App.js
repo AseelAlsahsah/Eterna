@@ -19,7 +19,6 @@ function App() {
     <div>
       <Navbar />
       <Routes>
-        {/* Define Routes here */}
         <Route path="/" element={<Home />} />
         <Route path="/overview" element={<Overview />} />
         <Route path="/business-lifecycle" element={<BusinessLifecyclePage />}/>

@@ -4,11 +4,11 @@
   background-repeat: no-repeat;
   min-height: 400px;
   display: flex;
-  justify-content: flex-start; 
+  justify-content: flex-start;
   align-items: center;
-  padding: 60px 80px; 
+  padding: 60px 80px;
   position: relative;
-  text-align: left; 
+  text-align: left;
 }
 
 .sec-hero-content {
@@ -20,57 +20,109 @@
   align-items: flex-start;
 }
 
-  .sec-hero-section::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.5); 
-    z-index: 1;
+.sec-hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.sec-hero-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #f17c00;
+}
+
+.sec-hero-description {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  line-height: 1.6;
+  padding-right: 300px;
+  color: white;
+}
+
+.start-planning-btn {
+  background-color: #f17c00;
+  color: white;
+  font-size: 14px;
+  font-weight: 550;
+  padding: 12px 40px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.start-planning-btn:hover {
+  background-color: #d66f00;
+}
+
+.start-planning-btn:hover::after {
+  content: " →";
+}
+
+.start-planning-btn::after {
+  content: "";
+  margin-left: 8px;
+  transition: all 0.3s ease;
+}
+
+/* Responsive: Adjust layout for smaller screens */
+@media (max-width: 900px) {
+  .sec-hero-section {
+    padding: 40px 20px; /* Adjust padding for smaller screens */
+    text-align: center;
   }
-  
+
+  .sec-hero-content {
+    max-width: 90%;
+    align-items: center; /* Center content on smaller screens */
+  }
+
   .sec-hero-title {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-    color: #f17c00; 
+    font-size: 1.8rem; /* Adjust font size for smaller screens */
+    text-align: center;
   }
-  
+
   .sec-hero-description {
     font-size: 1rem;
-    margin-bottom: 30px;
-    line-height: 1.5;
-    padding-right: 300px;
-    color: white;
+    padding-right: 0; /* Remove extra padding on smaller screens */
+    text-align: center;
   }
-  
+
   .start-planning-btn {
-    background-color: #f17c00; 
-    color: white;
+    width: 60%; /* Button width increases on smaller screens */
+    padding: 15px 0;
+  }
+}
+
+/* Responsive: Adjust for mobile screens */
+@media (max-width: 600px) {
+  .sec-hero-section {
+    padding: 20px 15px; /* Reduce padding on mobile */
+  }
+
+  .sec-hero-title {
+    font-size: 1.5rem; /* Smaller title font size */
+  }
+
+  .sec-hero-description {
+    font-size: 0.9rem; /* Smaller description text */
+    line-height: 1.4;
+    padding-right: 0; /* Ensure there's no padding */
+    text-align: center;
+  }
+
+  .start-planning-btn {
+    width: 50%; /* Button takes larger width on mobile */
+    padding: 15px;
     font-size: 14px;
-    font-weight: 550;
-    padding: 12px 40px;
-    border: none;
-    cursor: pointer;
-    border-radius: 4px;
-    transition: all 0.3s ease;
-    margin-top: 20px;
-    display: inline-flex;
-    align-items: center;
   }
-  
-  .start-planning-btn:hover {
-    background-color: #d66f00;
-  }
-  
-  .start-planning-btn:hover::after {
-    content: " →"; 
-  }
-  
-  .start-planning-btn::after {
-    content: "";
-    margin-left: 8px;
-    transition: all 0.3s ease;
-  }
-  
+}

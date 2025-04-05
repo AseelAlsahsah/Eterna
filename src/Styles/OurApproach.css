@@ -3,12 +3,15 @@
     background-color: white;
     padding: 50px;
     width: 100vw;
+    box-sizing: border-box;
 }
   
 .our-approach-container {
     max-width: 1200px;
     margin: 0 auto;
     text-align: left;
+    padding: 0 20px; 
+    box-sizing: border-box;
 }
   
 .our-approach-container h2 {
@@ -17,27 +20,44 @@
     line-height: 1.28em;
     margin-bottom: 20px;
     color: #1f4a75;
+    word-wrap: break-word; 
 }
   
 .our-approach-container p {
     font-size: 16px;
     line-height: 1.25;
     color: #333;
+    word-wrap: break-word;
+    margin-bottom: 20px; 
 }
-  
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .our-approach-container h2 {
-        font-size: 1.6rem;
+        font-size: 1.8rem; /* Adjusted font size for readability */
+        text-align: center; /* Center the title on smaller screens */
     }
   
     .our-approach-container p {
         font-size: 1rem;
+        text-align: center; /* Center the paragraphs on smaller screens */
     }
 }
   
 @media (max-width: 480px) {
     .our-approach-section {
         padding: 30px 15px;
+    }
+
+    .our-approach-container {
+        padding: 0 10px; /* Reduced padding for smaller screens */
+    }
+    
+    .our-approach-container h2 {
+        font-size: 1.5rem; /* Smaller heading size on very small screens */
+    }
+
+    .our-approach-container p {
+        font-size: 0.9rem; /* Adjusted text size for smaller screens */
     }
 }

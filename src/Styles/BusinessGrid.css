@@ -1,66 +1,83 @@
 .business-grid-section {
-    background-color: white; 
+    background-color: white;
     padding: 40px 20px;
     text-align: center;
     width: 100vw;
-}
-
-.business-grid-container {
+  }
+  
+  .business-grid-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 columns */
-    grid-gap: 20px; 
-    align-items: stretch; 
-    justify-items: stretch; 
-    min-height: 100vh; 
-}
-
-.business-grid-item {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on larger screens */
+    grid-gap: 20px;
+    align-items: stretch;
+    justify-items: stretch;
+    min-height: 100vh;
+  }
+  
+  .business-grid-item {
     background-color: #ffffff;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: center; 
-    align-items: center; 
+    justify-content: center;
+    align-items: center;
     height: auto;
-    width: 100%; 
-}
-
-.grid-icon {
-    width: 50px; 
+    width: 100%;
+  }
+  
+  .grid-icon {
+    width: 50px;
     height: auto;
     margin-bottom: 15px;
-}
-
-.grid-title {
+  }
+  
+  .grid-title {
     font-family: 'Bitter', Georgia, "Times New Roman", serif;
     font-size: 1.5rem;
     color: #1f4a75;
     margin-bottom: 10px;
-}
-
-.grid-text {
+  }
+  
+  .grid-text {
     font-size: 1rem;
     padding: 0px 50px;
     color: #333;
     line-height: 1.5;
-}
-
-@media (max-width: 768px) {
+  }
+  
+  /* Mobile and Tablet Responsive Design */
+  @media (max-width: 768px) {
     .business-grid-container {
-        grid-template-columns: 1fr; /* Stack items in 1 column on small screens */
-        min-height: auto; 
+      grid-template-columns: 1fr; /* Stack items in 1 column on smaller screens */
+      min-height: auto;
     }
-
+  
     .grid-icon {
-        width: 40px; /* Adjust icon size on smaller screens */
+      width: 40px; /* Adjust icon size on smaller screens */
     }
-
+  
     .grid-title {
-        font-size: 1.3rem; /* Adjust title size on smaller screens */
+      font-size: 1.3rem; /* Adjust title size on smaller screens */
     }
-
+  
     .grid-text {
-        padding: 0px 20px; /* Adjust padding on smaller screens */
+      padding: 0px 20px; /* Adjust padding on smaller screens */
     }
-}
+  }
+  
+  @media (max-width: 480px) {
+    .grid-title {
+      font-size: 1.2rem; /* Further reduce title size on very small screens */
+    }
+  
+    .grid-text {
+      font-size: 0.9rem; /* Further reduce font size for very small screens */
+      padding: 0px 15px; /* Further reduce padding */
+    }
+  
+    .grid-icon {
+      width: 35px; /* Make the icons even smaller for very small screens */
+    }
+  }
+  
