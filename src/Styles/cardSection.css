@@ -13,9 +13,9 @@
     color: #555;
   }
 
-   .section-description-title {
+  .section-description-title {
     font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 1.5rem;  /* Default for larger screens */
     color: #1f4a75;
     margin-top: 30px;
   }
@@ -80,3 +80,26 @@
     }
   }
   
+  /* Make the title smaller on smaller screens */
+@media (max-width: 768px) {
+  .section-description-title {
+    font-size: 1.25rem;  /* Reduce the font size */
+    margin-top: 20px;    /* Reduce the margin */
+  }
+}
+
+/* Adjust paragraph font size and padding on smaller screens */
+@media (max-width: 768px) {
+  .section-description {
+    font-size: 15px;    /* Smaller font size */
+    padding: 20px 40px; /* Reduce padding */
+  }
+}
+
+@media (max-width: 480px) {
+  /* Further reduce font size and padding for very small screens */
+  .section-description {
+    font-size: 13px;
+    padding: 15px 20px;
+  }
+}

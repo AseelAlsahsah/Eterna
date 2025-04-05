@@ -24,40 +24,42 @@
   align-items: center;
   height: auto;
   width: 100%;
-  padding: 20px;
+  padding: 15px; /* Reduced padding */
+  margin: 0 auto; /* Center items */
 }
 
 .grid-icon {
-  width: 50px;
+  width: 40px; /* Reduced icon size */
   height: auto;
-  margin-bottom: 15px;
+  margin-bottom: 10px; /* Reduced margin */
 }
 
 .grid-title {
   font-family: 'Bitter', Georgia, "Times New Roman", serif;
-  font-size: 1.5rem;
+  font-size: 1.3rem; /* Reduced font size */
   color: #1f4a75;
-  margin-bottom: 10px;
+  margin-bottom: 8px; /* Reduced margin */
 }
 
 .grid-text {
-  font-size: 1rem;
-  padding: 0px 50px;
+  font-size: 0.9rem; /* Reduced font size */
+  padding: 0px 20px; /* Default padding */
   color: #333;
-  line-height: 1.5;
+  line-height: 1.4; /* Adjust line height */
+  margin-bottom: 15px; /* Reduced margin to avoid excess spacing */
 }
 
 .learn-more-btn {
   background-color: #f17c00;
   color: white;
-  font-size: 16px;
+  font-size: 14px; /* Reduced font size */
   font-weight: 550;
-  padding: 12px 40px;
+  padding: 10px 30px; /* Adjust padding */
   border: none;
   cursor: pointer;
   border-radius: 4px;
   transition: all 0.3s ease;
-  margin-top: 20px;
+  margin-top: 10px; /* Reduced margin */
   display: inline-flex;
   align-items: center;
 }
@@ -79,41 +81,52 @@
 /* Mobile and Tablet Responsive Design */
 @media (max-width: 768px) {
   .services-grid-container {
-    grid-template-columns: 1fr; /* Stack the items in a single column */
+    grid-template-columns: 1fr; /* Stack items in a single column */
     min-height: auto;
   }
 
+  .services-grid-item {
+    padding: 15px; /* Adjust padding */
+  }
+
   .grid-icon {
-    width: 40px; /* Reduce icon size on mobile */
+    width: 35px; /* Further reduce icon size */
+    margin-bottom: 8px; /* Adjust margin */
   }
 
   .grid-title {
-    font-size: 1.3rem; /* Reduce title font size on smaller screens */
+    font-size: 1.2rem; /* Further reduce title font size */
   }
 
   .grid-text {
-    padding: 0px 20px; /* Adjust padding for better readability on mobile */
-    font-size: 0.9rem; /* Slightly reduce font size on mobile */
-  }
-
-  .learn-more-btn {
-    padding: 10px 30px; /* Adjust button padding for mobile */
-    font-size: 14px; /* Reduce button font size */
-  }
-}
-
-@media (max-width: 480px) {
-  .grid-title {
-    font-size: 1.1rem; /* Further reduce title font size on very small screens */
-  }
-
-  .grid-text {
-    padding: 0px 10px; /* Further reduce padding on very small screens */
-    font-size: 0.8rem; /* Further reduce font size for mobile screens */
+    padding: 0px 20px; /* Ensure there’s enough space around text */
+    font-size: 0.85rem; /* Further reduced font size */
+    margin-bottom: 20px; /* Additional spacing between paragraphs */
   }
 
   .learn-more-btn {
     padding: 8px 25px; /* Further reduce button padding */
-    font-size: 13px; /* Adjust button font size for smaller devices */
+    font-size: 13px; /* Further reduce button font size */
+  }
+}
+
+@media (max-width: 480px) {
+  .services-grid-item {
+    padding: 10px 0px; /* Further reduce padding for small devices */
+  }
+
+  .grid-title {
+    font-size: 1.1rem; /* Further reduce title font size */
+  }
+
+  .grid-text {
+    padding: 0px 15px; /* Adjust padding for smaller screens */
+    font-size: 0.8rem; /* Further reduce font size */
+    margin-bottom: 15px; /* Ensure some margin for readability */
+  }
+
+  .learn-more-btn {
+    padding: 6px 20px; /* Further reduce padding for very small screens */
+    font-size: 12px; /* Adjust font size for smaller devices */
   }
 }

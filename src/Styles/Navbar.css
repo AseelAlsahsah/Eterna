@@ -104,9 +104,10 @@ body {
   display: none;
   flex-direction: column;
   justify-content: space-between;
-  width: 30px;
+  width: 35px;
   height: 25px;
   cursor: pointer;
+  margin-right: 30px; /* Add this line */
 }
 
 .hamburger-menu div {

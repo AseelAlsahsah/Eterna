@@ -8,7 +8,7 @@
 .service-list-item {
   display: flex;
   align-items: center;
-  width: 100%; 
+  width: 100%;
   background-color: #f9f9f9;
   padding: 20px;
   border-radius: 8px;
@@ -37,4 +37,57 @@
   color: #333;
   line-height: 1.5;
   padding-right: 100px;
+}
+
+/* Mobile and Tablet Responsive Design */
+@media (max-width: 768px) {
+  .services-list-container {
+    padding: 20px 30px; /* Reduced padding for smaller screens */
+  }
+
+  .service-list-item {
+    flex-direction: column; /* Stack items vertically */
+    padding: 15px; /* Adjust padding for smaller screens */
+  }
+
+  .service-list-icon {
+    width: 50px; /* Adjust icon size */
+    height: 50px;
+    margin-bottom: 15px; /* Adjust margin for stacked layout */
+  }
+
+  .service-list-title {
+    font-size: 1.3rem; /* Slightly reduce title font size */
+  }
+
+  .service-list-description {
+    font-size: 1rem; /* Reduce description font size */
+    padding-right: 0; /* Remove right padding to prevent overflow */
+    text-align: center; /* Center text for better readability */
+  }
+}
+
+@media (max-width: 480px) {
+  .services-list-container {
+    padding: 20px 10px; /* Even less padding for very small screens */
+  }
+
+  .service-list-item {
+    padding: 12px; /* Further reduce padding for smaller devices */
+  }
+
+  .service-list-icon {
+    width: 45px; /* Further reduce icon size */
+    height: 45px;
+  }
+
+  .service-list-title {
+    font-size: 1.1rem; /* Further reduce title font size */
+  }
+
+  .service-list-description {
+    font-size: 0.9rem; /* Further reduce font size */
+    padding-right: 10px; /* Ensure no padding on the right */
+    text-align: center; /* Center text */
+  }
 }
