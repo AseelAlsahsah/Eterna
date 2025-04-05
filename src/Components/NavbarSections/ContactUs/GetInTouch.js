@@ -13,7 +13,7 @@ const GetInTouch = () => {
       <ul className="contact-list">
         <li>
           <FaPhone className="contact-icon" />
-          <a href="tel:+1234567890">+1 (234) 567-890</a>
+          <a href="tel:+1234567890">+0 (000) 000-000</a>
         </li>
         <li>
           <FaEnvelope className="contact-icon" />
@@ -32,7 +32,7 @@ const GetInTouch = () => {
         <li>
           <FaLinkedinIn className="contact-icon" />
           <a
-            href="https://www.linkedin.com/company/your-company"
+            href="https://www.linkedin.com"
             target="_blank"
             rel="noopener noreferrer"
           >
