@@ -1,0 +1,43 @@
+.our-approach-section {
+    flex: 3;
+    background-color: white;
+    padding: 50px;
+    width: 100vw;
+}
+  
+.our-approach-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+}
+  
+.our-approach-container h2 {
+    font-family: 'Bitter',Georgia,"Times New Roman",serif;
+    font-size: 25px;
+    line-height: 1.28em;
+    margin-bottom: 20px;
+    color: #1f4a75;
+}
+  
+.our-approach-container p {
+    font-size: 16px;
+    line-height: 1.25;
+    color: #333;
+}
+  
+/* Responsive Design */
+@media (max-width: 768px) {
+    .our-approach-container h2 {
+        font-size: 1.6rem;
+    }
+  
+    .our-approach-container p {
+        font-size: 1rem;
+    }
+}
+  
+@media (max-width: 480px) {
+    .our-approach-section {
+        padding: 30px 15px;
+    }
+}

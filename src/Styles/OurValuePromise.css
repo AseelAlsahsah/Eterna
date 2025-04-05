@@ -1,0 +1,62 @@
+.our-value-promise-section {
+    flex: 2;
+    text-align: center;
+    padding: 50px;
+    background-color: #ddeae3;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100vw;
+}
+
+.our-value-promise-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.value-promise-icon {
+    width: 80px; 
+    height: auto; 
+    margin-bottom: 20px; 
+}
+
+.our-value-promise-container h2 {
+    font-family: 'Bitter', Georgia, "Times New Roman", serif;
+    font-size: 25px;
+    line-height: 1.28em;
+    margin-bottom: 20px;
+    color: #1f4a75;
+}
+
+.our-value-promise-text {
+    font-size: 16px;
+    line-height: 1.25;
+    padding: 0px 60px;
+    color: #555;
+    max-width: 900px;
+    margin: 0 auto; 
+}
+
+@media (max-width: 768px) {
+    .our-value-promise-container h2 {
+        font-size: 1.6rem; /* Slightly reduce the font size for small screens */
+    }
+
+    .our-value-promise-text {
+        font-size: 1rem; /* Adjust font size for better readability on small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .our-value-promise-section {
+        padding: 30px 15px; /* Adjust padding for very small screens */
+    }
+
+    .value-promise-icon {
+        width: 60px; /* Adjust the icon size for smaller screens */
+    }
+
+    .our-value-promise-text {
+        font-size: 0.9rem; /* Adjust text size for small screens */
+    }
+}

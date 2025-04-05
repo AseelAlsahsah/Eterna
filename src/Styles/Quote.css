@@ -1,0 +1,86 @@
+.quote-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100vw; 
+  height: 300px;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+
+.quote-container {
+  display: flex;
+  width: 100%; 
+  height: 100%; 
+}
+
+.quote-text {
+  flex: 1;
+  background-color: #1f4a75;
+  color: #bbd9cd;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+  text-align: center; 
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.quote-text h1 {
+  font-family: 'Bitter', Georgia, "Times New Roman", serif;
+  font-size: 26px; 
+}
+
+.quote-text p {
+  font-size: 20px; 
+}
+
+.quote-text .text-wrapper {
+  width: 100%;
+}
+
+.quote-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: 100%; 
+  max-height: 400px;
+}
+
+.quote-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .quote-container {
+    flex-direction: column; /* Stack columns vertically */
+    height: auto; /* Adjust height for smaller screens */
+  }
+
+  .quote-image img {
+    height: auto; /* Make image responsive */
+  }
+}
+
+@media (max-width: 480px) {
+  .quote-section {
+    height: 250px; /* Smaller height for very small screens */
+  }
+
+  .quote-text h1 {
+    font-size: 1.8rem; /* Adjust font size for small screens */
+  }
+
+  .quote-text p {
+    font-size: 1rem; /* Adjust paragraph font size */
+  }
+}

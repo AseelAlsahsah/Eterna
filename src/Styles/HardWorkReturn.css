@@ -1,0 +1,43 @@
+.hardwork-section {
+    background-color: white; 
+    padding: 40px 20px;
+    text-align: left;
+    margin: 0 auto;
+    width: 100vw;
+    padding: 30px 80px;
+  }
+  
+  .hardwork-title {
+    font-family: 'Bitter', Georgia, "Times New Roman", serif;
+    font-size: 1.5rem;
+    color: #1f4a75;
+    margin-bottom: 20px;
+  }
+  
+  .hardwork-paragraph {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 30px;
+    padding-right: 200px;
+    line-height: 1.5;
+  }
+  
+  .hardwork-list {
+    list-style: none;
+    padding: 20px 0px;
+  }
+  
+  .hardwork-list li {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .hardwork-arrow {
+    width: 20px; 
+    height: auto;
+  }
+  

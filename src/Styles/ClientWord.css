@@ -1,0 +1,53 @@
+.word-section {
+    background-color: #f4f4f4; 
+    padding: 40px 20px;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .word-title {
+    font-family: 'Bitter', Georgia, "Times New Roman", serif;
+    font-size: 1.5rem;
+    color: #1f4a75;
+    margin-bottom: 20px;
+  }
+  
+  .word-text {
+    font-size: 1rem;
+    color: #1f4a75;
+    margin-bottom: 10px;
+    line-height: 1.5;
+    padding: 0px 70px;
+  }
+
+  .author {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #1f4a75;
+    margin-bottom: 30px;
+    line-height: 1.5;
+    padding: 0px 20px;
+  }
+
+  .word-icon {
+    width: 50px; 
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .word-title {
+      font-size: 1.5rem; 
+    }
+  
+    .word-text {
+      font-size: 0.9rem;
+    }
+
+    .author {
+      font-size: 0.9rem; 
+    }
+  }
+  

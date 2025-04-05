@@ -1,0 +1,59 @@
+/* Make sure HeroSection is the relative reference for ServicesSection */
+.hero-section {
+    position: relative; /* This will ensure the ServicesSection is positioned relative to HeroSection */
+  }
+  
+  /* The ServicesSection should be absolutely positioned at the bottom of the HeroSection */
+  .services-section {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(199, 113, 40, 0.85);
+    color: white;
+    position: absolute; /* Position it absolutely inside the HeroSection */
+    bottom: 0; /* Align it at the bottom of the HeroSection */
+    left: 0;
+    right: 0;
+    z-index: 1; /* Ensures it sits above the HeroSection */
+  }
+  
+  .service-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 35px;
+    width: 100%;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    border-left: 1px solid white;
+  }
+
+  .service-item:first-child {
+    border-left: none;
+  }
+  
+  .service-item:hover {
+    background-color: #1f4a75;
+  }
+  
+  .service-item p {
+    margin: 0;
+    font-size: 16px;
+  }
+  
+  .service-item h2 {
+    margin: 10px 0;
+  }
+  
+  .service-item p:last-child {
+    margin-top: 10px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .service-item p:hover {
+    text-decoration: underline;
+  }
+  

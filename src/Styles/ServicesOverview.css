@@ -1,0 +1,10 @@
+/* Container for the services-overview page */
+.services-overview-container {
+  display: flex;
+  flex-direction: column; 
+  justify-content: flex-start; 
+  align-items: center;
+  background-color: white;
+  overflow: hidden; 
+  box-sizing: border-box; 
+}

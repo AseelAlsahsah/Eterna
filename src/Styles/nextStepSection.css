@@ -1,0 +1,95 @@
+.next-step-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 80px;
+    background: linear-gradient(to bottom, #ffffff, #bedbff);
+    flex-wrap: wrap; 
+  }
+  
+  .text-content {
+    flex: 1;
+    max-width: 50%;
+    color: #1f4a75;
+    padding-right: 40px;
+  }
+  
+  .text-content p {
+    font-size: 16px; 
+    line-height: 1.6;
+  }
+  
+  .bold-text {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  
+  .start-planning-btn {
+    background-color: #f17c00; 
+    color: white;
+    font-size: 16px;
+    font-weight: 550;
+    padding: 12px 40px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+    display: inline-flex;
+    align-items: center;
+  }
+  
+  .start-planning-btn:hover {
+    background-color: #d66f00;
+  }
+  
+  .start-planning-btn:hover::after {
+    content: ' →'; 
+  }
+  
+  .start-planning-btn::after {
+    content: '';
+    margin-left: 8px;
+    transition: all 0.3s ease;
+  }
+  
+  .image-content {
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .image-content img {
+    max-width: 60%;
+    height: 60%;
+  }
+  
+  /* Responsive: stack on smaller screens */
+  @media (max-width: 900px) {
+    .next-step-section {
+      flex-direction: column;
+      text-align: center;
+      padding: 40px 20px;
+    }
+  
+    .text-content, .image-content {
+      max-width: 100%;
+      padding: 0;
+    }
+  
+    .text-content {
+      margin-bottom: 30px;
+    }
+  
+    .image-content img {
+      max-width: 100%; /* Ensure image takes full width on small screens */
+      height: auto;
+    }
+  
+    .start-planning-btn {
+      width: 50%; /* Button takes half width on smaller screens */
+      padding: 15px 0;
+    }
+  }
+  

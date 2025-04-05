@@ -1,0 +1,16 @@
+.hero-section {
+    background-image: url('./images/homepage.png');
+    /* background-image: url('./images/consulting-meeting.jpg'); */
+    background-size: cover;
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    min-height: 50vh;
+    height: 90vh; 
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 0;
+  }
+  

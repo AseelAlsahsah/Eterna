@@ -1,0 +1,32 @@
+.vision-section {
+    background-color: #f4f4f4; 
+    padding: 40px 20px;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .vision-title {
+    font-family: 'Bitter', Georgia, "Times New Roman", serif;
+    font-size: 1.5rem;
+    color: #1f4a75;
+    margin-bottom: 20px;
+  }
+  
+  .vision-text {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 30px;
+    line-height: 1.5;
+    padding: 0px 70px;
+  }
+  
+  @media (max-width: 768px) {
+    .vision-title {
+      font-size: 1.5rem; /* Reduce font size on smaller screens */
+    }
+  
+    .vision-text {
+      font-size: 0.9rem; /* Adjust text size on smaller screens */
+    }
+  }
+  
