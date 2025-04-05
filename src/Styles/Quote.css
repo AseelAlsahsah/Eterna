@@ -95,7 +95,6 @@
 
 @media (max-width: 480px) {
   .quote-section {
-    padding-top: 80px; /* Ensure it clears the navbar on mobile */
     height: auto; /* Let it adjust based on content */
   }
 
@@ -104,7 +103,7 @@
   }
 
   .quote-text h1 {
-    font-size: 1.8rem; /* Adjust font size for small screens */
+    font-size: 1.25rem; /* Adjust font size for small screens */
     margin-top: 0;
   }
 
